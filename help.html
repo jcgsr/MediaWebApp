@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Instruções</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf859e024f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="containerHelp">
+
+        <h1>INSTRUÇÕES</h1>
+        <section class="info">
+
+            <ul>
+                <li>WebApp pensado para ajudar os professores a calcularem as médias.</li>
+                <li>A média utilizada nesse WebApp é <ins>5.0</ins>.</li>
+                <li>Não se deve usar <em>vírgula</em> mas <em>ponto</em> nas casas decimais.</li>
+                <li>No campo <em>Aprovação Direta</em>, deve-se colocar as notas
+                    que, somadas, sejam iguais ou superiores a <ins>10.0</ins>.
+                </li>
+                <li>No campo <em>Recuperação Semestral</em>, deve-se colocar
+                    as notas que, somadas, sejam inferiores a <ins>10.0</ins>.
+                </li>
+                <li>Caso uma das Médias Semestrais no campo <em>Recuperação Semestral</em> seja
+                    igual ou maior a <ins>5.0</ins>, <br> deve-se repetir essa mesma média
+                    na nota de sua respectiva recuperação semestral.
+                </li>
+                <li>Caso a nota de qualquer <em>Recuperação Semestral</em> seja menor
+                    que a sua respectiva Média Semestral, <br> deve-se descartar
+                    a nota da recuperação e repetir a <em>Média Semestral</em>.
+                </li>
+
+            </ul>
+            <p>Voltar à Calculadora com <a href="index.html">Aprovação Direta</a> ou
+                <a href="indexB.html">Recuperação</a>.
+
+            </p>
+        </section>
+
+        <section class="contato">
+
+            <h3>Contatos</h3>
+
+            <form action="mailto:cabralguerra@gmail.com" method="post">
+                <input type="submit" class="btn btn-success" value="Email" name="Enviar email">
+            </form>
+
+            <a href="https://api.whatsapp.com/send?phone=5579988284730&text=Entrar em contato" target="_blank">
+                <i class="fab fa-whatsapp-square effect"></i></a>
+
+            <a href="https://twitter.com/teufel8"><i class="fab fa-twitter-square effect"></i></a>
+
+            <a href="https://www.instagram.com/cabralguerra/"><i class="fab fa-instagram-square effect"></i></a>
+
+            <a href='https://br.linkedin.com/in/cabralguerra'><i class="fab fa-linkedin effect"></i></a>
+            <a href="https://www.facebook.com/cabral8guerra"><i class="fab fa-facebook-square effect"></i></a>
+
+        </section>
+
+        <div class="vegan">
+            
+            <h4>Apoie essa causa: liberdade animal</h4>
+    
+            <a href="http://www.animalauthority.com/"><img class="img" src="images/alf.png" alt="Animal Liberation Front"
+                   ></a>
+            <a href="https://www.directactioneverywhere.com/"><img class="img" src="images/dxe.png" alt="Direct Action Everywhere"
+                   ></a>
+            <a href="https://mercyforanimals.org/"> <img .iclass="img" src="images/mfa.png" alt="Mercy for Animals"
+                   ></a>
+            <a href="https://www.peta.org/"><img .iclass="img" src="images/peta.png" alt="Peta"></a>
+            <img src="images/govegan.jpeg" alt="Go Vegan">
+    
+        </div>
+
+    </div>
+    <p id="date"></p>
+
+    <footer class="footer">
+        &copy; 2019 - Calculadora de Média Escolar
+        <br>
+        concebida e desenvolvida por <a href="https://jcgsr.github.io/" class="badge badge-primary">Jovane Rocha</a>.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

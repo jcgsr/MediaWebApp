@@ -1,0 +1,104 @@
+<!--14.11.2019 terminado e publicado 16.11.2019-->
+<!--4º WebApp, 1ª vez com link para whatsapp-->
+<!--1ª vez com botão do Twitter 24.11.2019-->
+<!--update (páginas separadas) 09.12.2019-->
+<!--refatorado em 18.04.2020-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Média Escolar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+        <section id="apresentar">
+
+            <h1>Média Escolar JS</h1>
+            <p>Cálculo das médias semestrais e da média final.
+                Qualquer dúvida, só seguir as <a href="help.html">instruções</a>. <br><br>
+                <a href="#f2">Média com Recuperação</a>
+            </p>
+
+        </section>
+
+        <section class="field1" id="f1">
+            <div class="notas-media">
+    
+                <h2>APROVAÇÃO DIRETA</h2>
+    
+                <div class="notas">
+                    1ª Nota:<input autofocus type="tel" size="1" name="nota1" onclick="this.select()">
+                    2ª Nota:<input type="tel" size="1" name="nota2" onclick="this.select()">
+                    3ª Nota:<input type="tel" size="1" name="nota3" onclick="this.select()">
+                    4ª Nota:<input type="tel" size="1" name="nota4" onclick="this.select()"><br>
+                    <input class="btn btn-secondary" type="button" value="Médias" onclick="calc()"><br>
+                    1º Semestre:<input type="tel" size="1" name="media1" onclick="this.select()">
+                    2º Semestre:<input type="tel" size="1" name="media2" onclick="this.select()"> <br>
+                    <em style="background-color: rgb(51, 50, 15); text-align: center;">Média Final:</em><br>
+                    <input type="tel" size="1" name="mediafinal">
+                </div>
+    
+            </div>
+        </section>
+
+        <section class="field2" id="f2">
+            <div class="notas-media">
+    
+                <h2>RECUPERAÇÃO</h2>
+    
+                <div class="notas">
+                    1ª Nota:<input type="tel" size="1" name="n1" onclick="this.select()">
+                    2ª Nota:<input type="tel" size="1" name="n2" onclick="this.select()">
+                    3ª Nota:<input type="tel" size="1" name="n3" onclick="this.select()">
+                    4ª Nota:<input type="tel" size="1" name="n4" onclick="this.select()"><br>
+                    <input class="btn btn-secondary" type="button" value="Médias" onclick="calc1()">
+                    1º Semestre:<input type="tel" size="1" name="media_semestre1" onclick="this.select()">
+                    2º Semestre:<input type="tel" size="1" name="media_semestre2" onclick="this.select()">
+    
+                    Recuperação 1º Semestre:<input type="tel" size="1" name="rec1" onclick="this.select()">
+                    Recuperação 2º Semestre:<input type="tel" size="1" name="rec2" onclick="this.select()"><br>
+                    <input class="btn btn-secondary" type="button" value="Médias" onclick="calcR()"><br>
+                    1º Semestre com Recuperação:<input type="tel" size="1" name="medRec1" onclick="this.select()">
+                    2º Semestre com Recuperação:<input type="tel" size="1" name="medRec2" onclick="this.select()"><br>
+                    <em style="background-color: rgb(51, 50, 15); text-align: center;">Média Final:</em><br>
+                    <input type="tel" size="1" name="mediafinalRec">
+                </div>
+                <br>
+
+                <a href="#f1">Aprovação Direta</a>
+            </div>
+        </section>
+
+
+        <p id="date"></p>
+    
+    <footer class="footer">
+        &copy; 2019 - Calculadora de Média Escolar
+        <br>
+        concebida e desenvolvida por <a href="https://jcgsr.github.io/" class="badge badge-primary">Jovane Rocha</a>.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
