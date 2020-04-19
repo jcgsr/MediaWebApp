@@ -42,8 +42,18 @@ footer{
     text-align: left;
     width: 50%;
     line-height: 2rem;
+    
 }
 
+.notas input{
+    border-radius: 2rem;
+}
+
+.notas input:focus{
+    color: blue;
+    border-color: yellow;
+    border-width: 4px;
+}
 .notas-media{
     width: 60%;
     margin: 0 auto;
@@ -106,4 +116,15 @@ footer{
 }
 #date{
     padding: 1rem;
+}
+
+@media screen (max-width: 600){
+    .notas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: left;
+        width: 70%;
+        line-height: 2rem;
+    }
 }
