@@ -86,7 +86,7 @@ function pressKey(ev){
       if(caixasInput[caixaAtual+1] != null)
           caixasInput[caixaAtual+1].focus();
      ev.preventDefault();
-     return false;
+return false; 
   }
   return true;
 }

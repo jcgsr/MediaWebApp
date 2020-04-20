@@ -46,7 +46,7 @@ footer{
 }
 
 .notas input{
-    border-radius: 2rem;
+    border-radius: .5rem;
 }
 
 .notas input:focus{
